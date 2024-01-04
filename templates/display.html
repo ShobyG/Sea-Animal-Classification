@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Classification Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+</head>
+<body>
+<div class="container">
+<h1>The image is classified as : {{name}}</h1>
+    <img src="{{ url_for('static', filename='images/'+filename) }}" alt="Uploaded Image">
+    <br>
+    <a class="back-link" href="{{ url_for('index') }}">Back to Upload Page</a>
+</div>
+</body>
+</html>
